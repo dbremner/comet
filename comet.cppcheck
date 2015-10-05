@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <paths>
+        <dir name="C:/Users/dbremner/Documents/GitHub/comet/examples"/>
+        <dir name="C:/Users/dbremner/Documents/GitHub/comet/include"/>
+        <dir name="C:/Users/dbremner/Documents/GitHub/comet/src"/>
+    </paths>
+    <libraries>
+        <library>microsoft_sal</library>
+        <library>windows</library>
+    </libraries>
+    <suppressions>
+        <suppression>noExplicitConstructor</suppression>
+    </suppressions>
+</project>
