@@ -941,24 +941,12 @@ namespace comet {
 	private:
 		const VARIANT* get_var() const throw()
 		{
-#ifndef __BORLANDC__
 			return static_cast<const VARIANT*>(this);
-#else
-			return reinterpret_cast<const VARIANT*>(this);
-#endif
 		}
 
 		VARIANT* get_var() throw()
 		{
-#ifdef __BORLANDC__
-#if __BORLANDC__ >= 0x0551
 			return reinterpret_cast<VARIANT*>(this);
-#else
-			return static_cast<VARIANT*>(this);
-#endif
-#else
-			return reinterpret_cast<VARIANT*>(this);
-#endif
 		}
 	};
 	//@}

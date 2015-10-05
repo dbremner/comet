@@ -25,9 +25,6 @@
 #include <comet/assert.h>
 #include <comet/tstring.h>
 
-#ifdef __BORLANDC__
- #define	COMET_ITERATOR_VOID(tag) std::iterator<tag, void, void, void *, void >
-#else
  #ifndef __SGI_STL
   #ifdef __MINGW32__
    #define	COMET_ITERATOR_VOID(tag) std::forward_iterator<tag, void>
@@ -41,7 +38,6 @@
  #else
   #define COMET_ITERATOR_VOID(tag) std::iterator<tag, void, void, void, void>
  #endif
-#endif
 
 namespace comet {
 	/** Contains implementation of registry classes.
@@ -1004,9 +1000,6 @@ namespace comet {
 			}
 		};
 
-#ifdef __BORLANDC__
-		using impl::key_base;
-#endif
 
 		/** \class key  registry.h comet/registry.h
 		  * Registry key wrapper.

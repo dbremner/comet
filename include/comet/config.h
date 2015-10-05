@@ -78,20 +78,8 @@
 #endif
 #endif
 
-#ifdef __BORLANDC__
-#pragma warning(disable: 8027)
-#pragma warning(disable: 8026)
-#define COMET_PARTIAL_SPECIALISATION
-#define COMET_NESTED_TEMPLATES
-#define COMET_BROKEN_WTYPES
-#define COMET_STD_ITERATOR
-#define COMET_STD_SWAP_NOTHROW
-
-#define COMET_GUID_BASE _GUID
-#else
 #define COMET_STD_SWAP_NOTHROW throw()
 #define COMET_GUID_BASE GUID
-#endif
 
 #ifdef __CYGWIN__
 #define COMET_PARTIAL_SPECIALISATION
